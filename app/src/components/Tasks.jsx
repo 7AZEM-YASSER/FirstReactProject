@@ -76,14 +76,6 @@ function Tasks() {
     setTasksList(renderedTasks);
   }, [todoArr, alignment]);
 
-  // useEffect(() => {
-  //   if (Array.isArray(todoArr)) {
-  //     localStorage.setItem("myTasks", JSON.stringify(todoArr));
-  //   } else {
-  //     console.error("todoArr received is not an array:", todoArr);
-  //   }
-  // }, [todoArr]);
-
   return (
     <div className={styles.intro}>
       <div className={styles.container}>
@@ -151,6 +143,27 @@ function Tasks() {
                     onChange={(e) => setInputData(e.target.value)}
                     id="outlined-basic"
                     label="Title"
+                    variant="outlined"
+                    sx={{ width: "100%" }}
+                  />
+                  <Typography
+                    sx={{ color: "red", fontWeight: "bold", fontSize: "13px" }}
+                  >
+                    {notFound}
+                  </Typography>
+                </Grid>
+                <Grid
+                  size={7.9}
+                  display={"flex"}
+                  flexDirection={"column"}
+                  justifyContent={"center"}
+                  alignItems={"center"}
+                >
+                  <TextField
+                    value={inputDescData}
+                    onChange={(e) => setInputDescData(e.target.value)}
+                    id="outlined-basic"
+                    label="Description"
                     variant="outlined"
                     sx={{ width: "100%" }}
                   />
