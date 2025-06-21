@@ -1,0 +1,7 @@
+{
+    "1": ["dashboard", "/dashboard", "faTableCellsLarge"],
+    "2": ["warehouse", "/warehouse", "faWarehouse"],
+    "3": ["tasks", "/tasks", "faListCheck"],
+    "4": ["setting", "/setting", "faGear"],
+    "5": ["loan", "/loan", "faLandmark"]
+}

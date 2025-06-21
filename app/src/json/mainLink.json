@@ -1,0 +1,6 @@
+{
+    "1": ["home", "/"],
+    "2": ["about", "/about"],
+    "3": ["contact us", "/contactUs"],
+    "4": ["login", "/login"]
+}
