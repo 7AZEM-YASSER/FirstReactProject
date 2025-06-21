@@ -174,27 +174,6 @@ function Tasks() {
                   </Typography>
                 </Grid>
                 <Grid
-                  size={7.9}
-                  display={"flex"}
-                  flexDirection={"column"}
-                  justifyContent={"center"}
-                  alignItems={"center"}
-                >
-                  <TextField
-                    value={inputDescData}
-                    onChange={(e) => setInputDescData(e.target.value)}
-                    id="outlined-basic"
-                    label="Description"
-                    variant="outlined"
-                    sx={{ width: "100%" }}
-                  />
-                  <Typography
-                    sx={{ color: "red", fontWeight: "bold", fontSize: "13px" }}
-                  >
-                    {notFound}
-                  </Typography>
-                </Grid>
-                <Grid
                   size={12}
                   display={"flex"}
                   justifyContent={"center"}
